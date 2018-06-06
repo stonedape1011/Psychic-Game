@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="http://i.imgur.com/eYTTfSW.jpg" type="image/png" sizes="16x16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Phish Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">    
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Titan+One" rel="stylesheet">
+</head>
+<body>
+
+    <h1><img id="logo" src="assets/images/pheesh.jpg"></h1>
+    <h1>HANGMAN</h1>
+
+    <!--<img id="phishimg" src="http://phish.com/wp-content/uploads/2015/09/nyestuff.jpg" width="1200" height="250">-->
+    
+    <div class="img-container">
+        <button class="btn btn-success btn-lg" id="newGameBtn"> 
+            New Game
+        </button>
+    </div>
+    <div class="container">
+    
+    <p>Wins: <p id="wins" style="color: green"> </p>
+    
+    <p>Losses:
+    <p id="losses" style="color: red"> </p>
+
+    <p>Current Word:
+    <p id="placeholders"> </p>
+
+    <p>Guesses Left: </p>
+    <p id="guesses-left"></p>
+
+    <p>Guessed Letters: </p>
+    <p id="guessed-letters"></p>
+
+    </div>
+
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

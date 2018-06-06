@@ -1,0 +1,77 @@
+body {
+    background: black;
+    float: center;
+}
+
+#logo {
+    margin-top: 10px;
+}
+
+#phishimg {
+    border: 10px solid #ebebeb;
+    margin-left: 100px;
+    float: center;
+
+}
+
+.img-container {
+    background: url("../images/fishmanswatch2.jpg");
+    margin-top: 10px;
+    margin-left: 375px;
+    float: left;
+    width: 350px;
+    height: 450px;
+    border: 5px dotted white;
+}
+
+
+.container {
+    margin-top: 10px;
+    margin-right: 35px;
+    float: left;
+    width: 350px;
+    height: 450px;
+    border: 5px dotted white;
+}
+
+#placeholders {
+    font-size: 26px;
+    letter-spacing: 10px;
+}
+
+#guessed-letters {
+    font-size: 22px;
+    color: yellow;
+}
+
+p {
+    margin-top: 10px;
+    float: center;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    
+    font-size: 48px;
+    letter-spacing: 14px;
+    font-family: 'Titan One', cursive;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    padding: 1%;
+    color: #fff;
+    text-align: center;
+}
+
+button {
+    margin-top: 40px;
+    margin-left: 110px;
+}
