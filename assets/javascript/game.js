@@ -1,16 +1,16 @@
  
     // Grab reference for my DOM elements
-    var newGameBtn = document.getElementById('newGameBtn');
-    var placeholders = document.getElementById('placeholders');
+    //var newGameBtn = document.getElementById('newGameBtn');
+    //var placeholders = document.getElementById('placeholders');
     var guessedLetters = document.getElementById('guessed-letters');
     var guessesLeft = document.getElementById('guesses-left');
-    var wins = document.getElementById('wins');
-    var losses = document.getElementById('losses');
-    var incorrectLetterBank = document.getElementById('incorrect-letter-bank');
+    //var wins = document.getElementById('wins');
+    //var losses = document.getElementById('losses');
+    //var incorrectLetterBank = document.getElementById('incorrect-letter-bank');
 
     // Create variables for game (wordBank, wins, losss, picked word, guesses left, 
     // game running, picked word placeholder, guessed letter bank, incorrect letter bank)
-    var wordBank = ['ICCULUS', ' TELA', 'WILSON', 'GAMEHENDGE', 'LIZARDS', 'FORBIN', 'STASH', 'TWEEZER', 'MEATSTICK', 'BATHTUB GIN', ];
+    var wordBank = ['ICCULUS', ' TELA', 'WILSON', 'GAMEHENDGE', 'LIZARDS', 'FORBIN', 'STASH', 'TWEEZER', 'MEATSTICK', 'BATHTUB GIN', 'POSSUM', 'FOAM', 'TUBE', 'WASTE', 'MORE', 'MAZE', 'SIMPLE', 'FREE', 'WAVES', 'PIPER', 'LIGHT', 'CAVERN', 'UNDERMIND' ];
     wins.innerHTML = 0;
     losses.innerHTML = 0;
     guessesLeft.innerHTML = 8;
@@ -24,7 +24,7 @@
     function newGame() {
         // Reset all game info
         gameRunning = true;
-        guessesLeft = 10;
+        guessesLeft.innerHTML = 8;
         guessedLetterBank = [];
         incorrectLetterBank = [];
         pickedWordPlaceholderArr = [];
@@ -42,9 +42,10 @@
         }
 
         // Write all new game info to DOM
-        guessesLeft.textContent = guessesLeft;
+        guessesLeft.innerHTML.textContent = guessesLeft.innerHTML;
         placeholders.textContent = pickedWordPlaceholderArr.join('');
         guessedLetters.textContent = incorrectLetterBank;
+        losses.innerHTML.textContent = losses.innerHTML;
 
     }
     // letterGuess function, takes in the letter you pressed and sees if it's in the selected word
@@ -83,23 +84,24 @@
         if (pickedWordPlaceholderArr.indexOf(letter.toLowerCase()) === -1 &&
         pickedWordPlaceholderArr.indexOf(letter.toUpperCase()) === -1) {
             // Drecrment guesses
-           guessesLeft--;
+           guessesLeft.innerHTML--;
            // Add incorrect letter to incorrectLetterBank
            incorrectLetterBank.push(letter.toUpperCase());
            // Write new bank of incorrect letters guessed to DOM
            guessedLetters.textContent = incorrectLetterBank.join(' ');
            // Write new amount of letter guesses to DOm
-           guessesLeft.textContent = guessesLeft;
+           guessesLeft.innerHTML.textContent = guessesLeft.innerHTML;
         }
         checkLoss();
     }
 
 // checkLoss
 function checkLoss() {
-    if (guessesLeft === 0) {
-     losses++;
+    if (guessesLeft.innerHTML == 0) {
+     losses.innerHTML++;
      gameRunning = false;
-     losses.textContent = losses;
+     losses.innerHTML.textContent = losses.innerHTML;
+     placeholders.textContent = pickedWord;
    }
   checkWin();
 }
@@ -108,9 +110,9 @@ function checkLoss() {
 function checkWin() {
  if (pickedWord.toLowerCase() === pickedWordPlaceholderArr.join('').toLowerCase())
     {
-     wins++;
+     wins.innerHTML++;
      gameRunning = false;
-     wins.textContent = wins;
+     wins.innerHTML.textContent = wins.innerHTML;
     }
 } 
 // Add event listener for new game button

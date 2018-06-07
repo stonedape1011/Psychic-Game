@@ -11,34 +11,44 @@
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Titan+One" rel="stylesheet">
 </head>
 <body>
+<img id="pfish" src="http://heyscottyb.com/wp-content/uploads/2017/11/phish-1997-live-photo.jpg" width="450" height="250">  
+<img id="step" src="https://i.ytimg.com/vi/HWcq-dNIM9Q/maxresdefault.jpg" width="400" height="250" style="float: right>
 
-    <h1><img id="logo" src="assets/images/pheesh.jpg"></h1>
-    <h1>HANGMAN</h1>
-
-    <!--<img id="phishimg" src="http://phish.com/wp-content/uploads/2015/09/nyestuff.jpg" width="1200" height="250">-->
+<div class="row">
+    <div class="col-lg-12 col-md-6 col-sm-3">
+        <h1><img id="logo" src="assets/images/pheesh.jpg"></h1>
+        <h1>HANGMAN</h1>
     
-    <div class="img-container">
-        <button class="btn btn-success btn-lg" id="newGameBtn"> 
+</div>
+    <div class="col-lg-12 col-md-6 col-sm-3">
+        <div class="img-container">
+            <button class="btn btn-success" id="newGameBtn"> 
             New Game
-        </button>
-    </div>
-    <div class="container">
+            </button>    
+        <iframe id="iframe" width="300" height="255" src="https://www.youtube.com/embed/2eBibggCibE?rel=0&amp;start=393" frameborder="1" allow="autoplay; encrypted-media"></iframe>
+         </div>
     
-    <p>Wins: <p id="wins" style="color: green"> </p>
+
+    <div class="col-lg-12 col-md-6 col-sm-3">
+        <div class="container">
     
-    <p>Losses:
-    <p id="losses" style="color: red"> </p>
+        <p>Wins: <p id="wins" style="color: green"> </p>
+    
+         <p>Losses:
+        <p id="losses" style="color: red"> </p>
 
-    <p>Current Word:
-    <p id="placeholders"> </p>
+        <p>Current Word:
+        <p id="placeholders"> </p>
 
-    <p>Guesses Left: </p>
-    <p id="guesses-left"></p>
+        <p>Guesses Left: </p>
+        <p id="guesses-left"></p>
 
-    <p>Guessed Letters: </p>
-    <p id="guessed-letters"></p>
+        <p>Guessed Letters: </p>
+        <p id="guessed-letters"></p>
 
+        </div>
     </div>
+</div>
 
 <script src="assets/javascript/game.js"></script>
 </body>
