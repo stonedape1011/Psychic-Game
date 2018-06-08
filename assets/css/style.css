@@ -100,3 +100,54 @@ button {
     margin-top: 100px;
     margin-left: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+
+    #logo {
+        margin-top: 100px;
+    }
+    #pfish {
+        margin-left: -10px;
+    }
+    #step {
+        margin-left: -10px;
+    }
+
+    .container {
+        margin-left: -10px;
+        height: 325px;
+        width: 200px;
+    }
+
+    .img-container {
+        margin-left: 10px;
+        height: 325px;
+        width: 200px;
+    }
+
+    p {
+        margin: auto;
+        padding: auto;
+
+    }
+
+    h2 {
+        margin: auto;
+        padding: auto;
+    }
+
+    h1 {
+        margin: auto;
+        padding: auto;
+    }
+
+    #iframe {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+
+        margin-left: 20px;
+    }
+}
